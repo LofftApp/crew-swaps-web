@@ -1,7 +1,7 @@
-import bgHomepage from "../assets/svg/bg-homepage.svg";
+import bgLeft from "../assets/svg/bg-left.svg";
 import { cn } from "../utils/cn";
 
-function BgImage({ className }: { className?: string }) {
+function BgLeft({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -10,10 +10,10 @@ function BgImage({ className }: { className?: string }) {
       )}
       data-testid="bg-image"
       style={{
-        backgroundImage: `url(${bgHomepage})`,
+        backgroundImage: `url(${bgLeft})`,
       }}
     ></div>
   );
 }
 
-export default BgImage;
+export default BgLeft;

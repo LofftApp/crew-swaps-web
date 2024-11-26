@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import BgImage from "./BgImage";
+import BgImage from "./BgLeft";
 
 describe("BgImage component", () => {
   it("renders backgorund image", () => {
