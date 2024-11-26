@@ -1,12 +1,11 @@
-import bgHomepage from "../../assets/svg/bg-homepage.svg";
+import BgImage from "../../components/BgImage";
 
 function Homepage() {
   return (
-    <div
-      className="flex h-screen flex-col items-center justify-center"
-      style={{ backgroundImage: `url(${bgHomepage})` }}
-    >
-      <h1 className="text-4xl font-bold text-gray-800">This is homepage</h1>
+    <div className="h-screen">
+      <BgImage />
+
+      <h1 className="text-center text-3xl font-bold">This is homepage</h1>
     </div>
   );
 }
