@@ -6,6 +6,6 @@ describe("Homepage Component", () => {
   it("renders 'This is homepage'", () => {
     render(<Homepage />);
     const textElement = screen.getByText("This is homepage");
-    expect(textElement).toBeInTheDocument(); // Use .toBeInTheDocument() for semantic clarity
+    expect(textElement).toBeInTheDocument();
   });
 });
