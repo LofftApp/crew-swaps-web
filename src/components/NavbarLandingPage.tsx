@@ -14,7 +14,7 @@ function NavbarLandingPage() {
       <div className="navbar-center hidden lg:flex"></div>
       <div className="navbar-end gap-4">
         <ThemeToggle />
-        <Link to="/" className="btn btn-primary px-8 text-lg">
+        <Link to="/" className="btn btn-primary px-6 text-lg lg:text-xl">
           Sign in
         </Link>
       </div>
