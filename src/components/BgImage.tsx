@@ -3,7 +3,7 @@ import { cn } from "../utils/cn";
 function BgImage({ className }: { className?: string }) {
   return (
     <div
-      className={cn(`absolute z-0 h-52 w-52 flex-col`, className)}
+      className={cn(`absolute -z-10 h-52 w-52 flex-col`, className)}
       data-testid="bg-image"
     >
       <svg
