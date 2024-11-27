@@ -21,13 +21,13 @@ function FooterLandingPage() {
     <footer className="footer footer-center rounded bg-base-100 p-10 text-lg text-base-content">
       <nav className="grid grid-flow-col gap-4">
         {routes.map((route) => (
-          <Link key={route.to} to={`/${route.to}`} className="link-hover link">
+          <Link key={route.to} to={`/${route.to}`} className="link-hover link lg:text-2xl">
             {route.label}
           </Link>
         ))}
       </nav>
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col gap-4 text-base">
           <Link to="/">
             <Instagram />
           </Link>

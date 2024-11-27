@@ -1,7 +1,9 @@
+import { Link } from "react-router";
 import BgImage from "../../components/BgImage";
 import Feature from "../../components/Feature";
 import FooterLandingPage from "../../components/FooterLandingPage";
 import NavbarHomepage from "../../components/NavbarLandingPage";
+import TrustedBadge from "../../components/TrustedBadge";
 
 function LandingPage() {
   return (
@@ -27,16 +29,14 @@ function LandingPage() {
           <Feature name="Fast" />
           <Feature name="Secure" />
         </div>
-        <div className="xs:w-[85%] ml-2 flex w-full items-center justify-center gap-2 rounded-full bg-base-300 p-2 text-sm sm:max-w-[50%] md:max-w-[55%] md:text-base lg:max-w-[35%] xl:max-w-[32%] xl:text-lg 2xl:max-w-[29%] 2xl:text-xl">
-          <div className="badge badge-primary p-4 text-sm font-semibold md:text-base xl:text-lg 2xl:text-xl">
-            Trusted
-          </div>
-          <p className="">by the leading airlines crews ✨</p>
-        </div>
-
+        <TrustedBadge />
         <div className="mt-2 flex items-center gap-4">
-          <button className="btn btn-primary">Get Started</button>
-          <button className="btn btn-outline btn-primary">Learn More</button>
+          <Link to="/signin" className="btn btn-primary xl:btn-lg">
+            Get Started
+          </Link>
+          <Link to="/" className="btn btn-outline btn-primary xl:btn-lg">
+            Learn More
+          </Link>
         </div>
       </div>
 

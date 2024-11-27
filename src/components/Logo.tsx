@@ -1,8 +1,8 @@
 function Logo() {
   return (
-    <div className="btn btn-ghost flex flex-nowrap gap-2 text-xl font-bold text-base-content hover:scale-105 lg:text-2xl">
+    <div className="btn btn-ghost flex flex-nowrap gap-2 lg:gap-3 text-xl md:text-2xl font-bold text-base-content hover:scale-105 lg:text-2xl xl:text-3xl">
       <svg
-        className="h-8 w-8 lg:h-12 lg:w-12"
+        className="h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14"
         width="100%"
         height="100%"
         viewBox="0 0 100 100"
