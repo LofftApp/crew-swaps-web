@@ -1,4 +1,6 @@
 import { Grip } from "lucide-react";
+import { Link } from "react-router";
+import Logo from "./Logo";
 
 function NavbarApp() {
   return (

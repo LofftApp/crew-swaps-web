@@ -2,11 +2,16 @@ import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 
 import LandingPage from "./LandingPage";
+import { BrowserRouter } from "react-router";
 
 describe("LandingPage Component", () => {
-  it("renders 'This is landing page'", () => {
-    render(<LandingPage />);
-    const textElement = screen.getByText("This is landing page");
+  it("renders title text ", () => {
+    render(
+      <BrowserRouter>
+        <LandingPage />
+      </BrowserRouter>,
+    );
+    const textElement = screen.getByTestId("landing-page");
     expect(textElement).toBeInTheDocument();
   });
 });

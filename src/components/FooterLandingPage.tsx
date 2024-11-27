@@ -1,13 +1,30 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router";
 
+const routes = [
+  {
+    to: "how-to-use",
+    label: "How to use",
+  },
+  {
+    to: "about",
+    label: "About us",
+  },
+  {
+    to: "contact",
+    label: "Contact",
+  },
+];
+
 function FooterLandingPage() {
   return (
     <footer className="footer footer-center rounded bg-base-100 p-10 text-lg text-base-content">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link-hover link">How to use</a>
-        <a className="link-hover link">About us</a>
-        <a className="link-hover link">Contact</a>
+        {routes.map((route) => (
+          <Link key={route.to} to={`/${route.to}`} className="link-hover link">
+            {route.label}
+          </Link>
+        ))}
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
