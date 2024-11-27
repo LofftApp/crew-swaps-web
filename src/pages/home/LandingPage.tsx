@@ -1,8 +1,8 @@
 import BgImage from "../../components/BgImage";
-import NavbarHomepage from "../../components/NavbarHomepage";
+import NavbarHomepage from "../../components/NavbarLandingPage";
 import ThemeToggle from "../../components/ThemeToggle";
 
-function Homepage() {
+function LandingPage() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <NavbarHomepage />
@@ -12,7 +12,7 @@ function Homepage() {
       <BgImage className="bottom-0 right-0 top-0 translate-x-1/3 translate-y-[150%] rotate-180 transform md:translate-x-1/4" />
 
       <div className="relative z-10 flex h-full items-center justify-center">
-        <h1 className="text-center text-3xl font-bold">This is homepage</h1>
+        <h1 className="text-center text-3xl font-bold">This is landing page</h1>
         <button className="btn btn-outline btn-primary">Try for Free</button>
         <ThemeToggle />
       </div>
@@ -20,4 +20,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default LandingPage;

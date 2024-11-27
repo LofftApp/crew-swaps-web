@@ -38,8 +38,8 @@ function ThemeToggle() {
           onChange={handleToggleTheme}
           checked={theme === themes.dark}
         />
-        <Sun className="swap-off h-10 w-10" />
-        <Moon className="swap-on h-10 w-10" />
+        <Sun className="swap-off h-8 w-8 hover:scale-110" />
+        <Moon className="swap-on h-8 w-8 hover:scale-110" />
       </label>
     </div>
   );
