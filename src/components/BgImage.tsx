@@ -1,7 +1,7 @@
-import bgLeft from "../assets/svg/bg-left.svg";
+import bgImage from "../assets/svg/bg-image.svg";
 import { cn } from "../utils/cn";
 
-function BgLeft({ className }: { className?: string }) {
+function BgImage({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -10,10 +10,10 @@ function BgLeft({ className }: { className?: string }) {
       )}
       data-testid="bg-left"
       style={{
-        backgroundImage: `url(${bgLeft})`,
+        backgroundImage: `url(${bgImage})`,
       }}
     ></div>
   );
 }
 
-export default BgLeft;
+export default BgImage;

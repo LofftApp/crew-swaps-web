@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import BgLeft from "./BgLeft";
+import BgImage from "./BgImage";
 
-describe("BgLeft component", () => {
+describe("BgImage component", () => {
   it("renders backgorund image", () => {
-    render(<BgLeft />);
-    const image = screen.getByTestId("bg-left");
+    render(<BgImage />);
+    const image = screen.getByTestId("bg-image");
     expect(image).toBeInTheDocument();
   });
 });
