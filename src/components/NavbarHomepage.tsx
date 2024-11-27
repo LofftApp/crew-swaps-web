@@ -33,10 +33,9 @@ function NavbarHomepage() {
             </li>
           </ul>
         </div>
-        <Link to="/">
+        <Link to="/" className="flex">
           <Logo />
         </Link>
-        {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -62,7 +61,7 @@ function NavbarHomepage() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn btn-primary">Sign in</a>
       </div>
     </div>
   );

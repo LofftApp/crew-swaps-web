@@ -11,6 +11,9 @@ export default {
       minHeight: {
         screen: "100dvh",
       },
+      fontFamily: {
+        neuemontreal: ["PPNeueMontreal", "sans-serif"],
+      },
     },
   },
   plugins: [daisyui],
