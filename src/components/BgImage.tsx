@@ -8,7 +8,7 @@ function BgImage({ className }: { className?: string }) {
         `absolute z-0 h-52 w-52 flex-col bg-center bg-no-repeat`,
         className,
       )}
-      data-testid="bg-left"
+      data-testid="bg-image"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
