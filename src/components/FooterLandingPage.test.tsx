@@ -3,6 +3,8 @@ import { describe, expect, it } from "vitest";
 import FooterLandingPage from "./FooterLandingPage";
 import { BrowserRouter, MemoryRouter, Route, Routes } from "react-router";
 import HowToUsePage from "../pages/howToUse/HowToUsePage";
+import AboutPage from "../pages/about/AboutPage";
+import ContactPage from "../pages/contact/ContactPage";
 
 describe("FooterLandingPage Component", () => {
   it("renders correctly", () => {
@@ -52,5 +54,39 @@ describe("FooterLandingPage Component", () => {
     fireEvent.click(howToUseLink);
 
     expect(screen.getByText("This is the HowToUsePage")).toBeInTheDocument();
+  });
+  it("navigates to 'AboutPage' page on link click", () => {
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <Routes>
+          <Route path="/" element={<FooterLandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </MemoryRouter>,
+    );
+
+    const howToUseLink = screen.getByRole("link", { name: /about/i });
+    expect(howToUseLink).toBeInTheDocument();
+
+    fireEvent.click(howToUseLink);
+
+    expect(screen.getByText("This is the AboutPage")).toBeInTheDocument();
+  });
+  it("navigates to 'ContactPage' page on link click", () => {
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <Routes>
+          <Route path="/" element={<FooterLandingPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </MemoryRouter>,
+    );
+
+    const howToUseLink = screen.getByRole("link", { name: /contact/i });
+    expect(howToUseLink).toBeInTheDocument();
+
+    fireEvent.click(howToUseLink);
+
+    expect(screen.getByText("This is the ContactPage")).toBeInTheDocument();
   });
 });
