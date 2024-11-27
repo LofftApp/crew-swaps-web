@@ -1,4 +1,3 @@
-import { Grip } from "lucide-react";
 import { Link } from "react-router";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
@@ -14,7 +13,7 @@ function NavbarLandingPage() {
       <div className="navbar-center hidden lg:flex"></div>
       <div className="navbar-end gap-4">
         <ThemeToggle />
-        <Link to="/" className="btn btn-primary px-6 text-lg lg:text-xl">
+        <Link to="signin" className="btn btn-primary px-6 text-lg lg:text-xl">
           Sign in
         </Link>
       </div>
