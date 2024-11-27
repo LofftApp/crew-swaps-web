@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         neuemontreal: ["PPNeueMontreal", "sans-serif"],
       },
+      screens: {
+        xxs: "375px",
+        xs: "414px",
+      },
     },
   },
   plugins: [daisyui],
