@@ -4,7 +4,14 @@ import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        screen: "100dvh",
+      },
+      minHeight: {
+        screen: "100dvh",
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
@@ -12,25 +19,25 @@ export default {
       {
         lightcrew: {
           primary: "#007AFF",
-          "primary-content": "#FFFFFF",
+          "primary-content": "#F9FAFB",
           secondary: "#C2DFFF",
           "secondary-content": "#041326",
           accent: "#041326",
-          "accent-content": "#FFFFFF",
+          "accent-content": "#F9FAFB",
           neutral: "#90A1B4",
-          "neutral-content": "#FFFFFF",
-          "base-50": "#FFFFFF",
+          "neutral-content": "#F9FAFB",
           "base-100": "#F9FAFB",
           "base-200": "#F3F4F6",
           "base-300": "#E5E7EB",
+          "base-content": "#041326",
           info: "#53B0E9",
-          "info-content": "#FFFFFF",
+          "info-content": "#F9FAFB",
           success: "#28C76F",
-          "success-content": "#FFFFFF",
+          "success-content": "#F9FAFB",
           warning: "#FFB547",
-          "warning-content": "#041326",
+          "warning-content": "#F9FAFB",
           error: "#FF5A5F",
-          "error-content": "#FFFFFF",
+          "error-content": "#F9FAFB",
         },
         darkcrew: {
           primary: "#4AAFFF",
@@ -45,6 +52,7 @@ export default {
           "base-100": "#121828",
           "base-200": "#1C2537",
           "base-300": "#2E3A4A",
+          "base-content": "#F5F7FA",
           info: "#4DA8F7",
           "info-content": "#0B1120",
           success: "#3FBD76",
@@ -56,8 +64,6 @@ export default {
         },
       },
     ],
-    darkTheme: "dark",
-    base: true,
-    styled: true,
+    darkTheme: "darkcrew",
   },
 };
