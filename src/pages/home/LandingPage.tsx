@@ -34,7 +34,7 @@ function LandingPage() {
           <Link to="/signin" className="btn btn-primary xl:btn-lg">
             Get Started
           </Link>
-          <Link to="/" className="btn btn-outline btn-primary xl:btn-lg">
+          <Link to="/how-to-use" className="btn btn-outline btn-primary xl:btn-lg">
             Learn More
           </Link>
         </div>
