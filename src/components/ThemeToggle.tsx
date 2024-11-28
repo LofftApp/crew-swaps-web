@@ -1,33 +1,8 @@
-import { useEffect } from "react";
-import { useLocalStorageState } from "../hooks/useLocalStorageState";
 import { Moon, Sun } from "lucide-react";
-
-const themes = {
-  dark: "darkcrew",
-  light: "lightcrew",
-};
+import { useTheme } from "../context/useTheme";
 
 function ThemeToggle() {
-  const { value: theme, setValue: setTheme } = useLocalStorageState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? themes.dark
-      : themes.light,
-    "theme",
-  );
-
-  useEffect(() => {
-    if (theme === themes.dark) {
-      document.documentElement.setAttribute("data-theme", themes.dark);
-    } else {
-      document.documentElement.setAttribute("data-theme", themes.light);
-    }
-  }, [theme]);
-
-  const handleToggleTheme = () => {
-    const newTheme = theme === themes.dark ? themes.light : themes.dark;
-    document.documentElement.setAttribute("data-theme", newTheme);
-    setTheme(newTheme);
-  };
+  const { theme, handleToggleTheme, themes } = useTheme();
 
   return (
     <div>
@@ -36,7 +11,7 @@ function ThemeToggle() {
           type="checkbox"
           className="theme-controller"
           onChange={handleToggleTheme}
-          checked={theme === themes.dark}
+          checked={theme === themes.light}
         />
         <Sun className="swap-off h-8 w-8 hover:scale-110" />
         <Moon className="swap-on h-8 w-8 hover:scale-110" />

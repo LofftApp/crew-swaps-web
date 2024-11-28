@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root[data-theme="lightcrew"] {
-  --color-primary: #007AFF; /* Default primary color */
-  --color-secondary: #C2DFFF; /* Default secondary color */
+  --color-primary: #007AFF;
+  --color-secondary: #C2DFFF;
 }
 
 /* Dark theme overrides */
 :root[data-theme="darkcrew"] {
-  --color-primary: #4AAFFF; /* Adjusted primary color for dark mode */
-  --color-secondary: #2B4C68; /* Adjusted secondary color for dark mode */
+  --color-primary: #4AAFFF;
+  --color-secondary: #2B4C68; 
 }
 
 @font-face {
