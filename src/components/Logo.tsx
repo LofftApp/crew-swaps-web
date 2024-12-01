@@ -2,7 +2,7 @@ import { cn } from "../utils/cn";
 
 function Logo({ text, className }: { text?: boolean; className?: string }) {
   return (
-    <div className="btn btn-ghost flex flex-nowrap gap-2 text-xl font-bold text-base-content hover:scale-105 md:text-2xl lg:gap-3 lg:text-2xl xl:text-3xl">
+    <div className="flex transform flex-nowrap items-center gap-2 text-xl font-bold text-base-content duration-200 ease-in-out hover:scale-105 md:text-2xl lg:gap-3 lg:text-2xl xl:text-3xl px-1">
       <svg
         className={cn("h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14", className)}
         width="100%"
