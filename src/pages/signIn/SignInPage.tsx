@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { Eye, EyeOff, Mail } from "lucide-react";
 import Logo from "../../components/Logo";
 import { useState } from "react";
+import image1 from "../../assets/illustration/illustration-1.png";
 
 function SignInPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,16 +19,16 @@ function SignInPage() {
   console.log(email, password);
 
   return (
-    <div className="relative mx-auto flex min-h-screen flex-col items-center overflow-hidden">
+    <div className="max-h-1/2 relative mx-auto flex min-h-screen flex-col items-center overflow-hidden lg:grid lg:grid-cols-2">
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
-      <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
 
-      <div className="2xs:mt-20 3xs:mt-14 mt-5 flex max-w-screen-2xl flex-col items-center justify-center gap-2 p-12 xs:mt-20 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20">
+      <div className="2xs:mt-20 3xs:mt-14 mt-5 flex max-w-screen-2xl flex-col items-center justify-center gap-2 p-12 xs:mt-20 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:mt-0 lg:gap-8 xl:p-20">
+        <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
         <div className="flex flex-col gap-2">
           <Logo className="h-12 w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20" />
-          <h1 className="text-center text-2xl font-semibold capitalize leading-[3.5rem] xs:text-4xl md:text-5xl md:leading-[4rem] lg:text-6xl lg:leading-[4.5rem] 2xl:text-7xl 2xl:leading-[5rem]">
+          <h1 className="text-center text-2xl font-semibold capitalize leading-[3.5rem] xs:text-4xl md:text-5xl md:leading-[4rem] lg:text-5xl lg:leading-[4rem] 2xl:text-7xl 2xl:leading-[5rem]">
             Sign in to your account
           </h1>
           <p className="text-center text-base font-medium text-base-content/70 xs:text-lg md:text-2xl lg:text-3xl 2xl:text-4xl">
@@ -87,6 +88,14 @@ function SignInPage() {
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="hidden p-0 text-center text-base text-base-content/70 xs:text-lg md:p-12 lg:block xl:p-20">
+        <img
+          src={image1}
+          alt=""
+          className="h-[600px] w-[500px] object-cover object-center 2xl:h-[700px] 2xl:w-[600px]"
+        />
       </div>
     </div>
   );
