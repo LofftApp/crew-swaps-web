@@ -34,7 +34,7 @@ function LandingPage() {
         <TrustedBadge />
         <div className="mt-2 flex items-center gap-4">
           <Link
-            to="/signin"
+            to="/signup"
             className="btn btn-primary text-lg xl:btn-lg lg:text-xl"
           >
             Get Started
