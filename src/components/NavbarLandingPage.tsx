@@ -7,7 +7,7 @@ function NavbarLandingPage() {
     <div className="navbar bg-base-100 p-3">
       <div className="navbar-start">
         <Link to="/" className="flex">
-          <Logo />
+          <Logo text />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex"></div>

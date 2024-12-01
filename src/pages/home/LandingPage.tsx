@@ -34,7 +34,7 @@ function LandingPage() {
           </Link>
           <Link
             to="/how-to-use"
-            className="btn btn-outline btn-primary text-lg xl:btn-lg lg:text-xl"
+            className="btn btn-info text-lg xl:btn-lg lg:text-xl"
           >
             Learn More
           </Link>
