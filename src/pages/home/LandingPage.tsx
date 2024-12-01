@@ -1,13 +1,20 @@
 import { Link } from "react-router";
+
+// Components
 import Feature from "../../components/Feature";
 import FooterLandingPage from "../../components/FooterLandingPage";
 import NavbarHomepage from "../../components/NavbarLandingPage";
 import TrustedBadge from "../../components/TrustedBadge";
-import ContainerWithBgImage from "../../components/ContainerWithBgImage";
+import BgImage from "../../components/BgImage";
 
 function LandingPage() {
   return (
-    <ContainerWithBgImage navbar={<NavbarHomepage />}>
+    <div className="relative mx-auto flex min-h-screen flex-col items-center justify-between overflow-hidden">
+      <NavbarHomepage />
+      {/* Left Image */}
+      <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
+      {/* Right Image */}
+      <BgImage className="2xs:translate-y-[270%] 3xs:translate-y-[272%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[275%] rotate-180 transform xs:translate-y-[222%] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
       <div
         data-testid="landing-page"
         className="flex max-w-screen-2xl flex-col items-center justify-center gap-4 p-12 xs:mt-2 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20"
@@ -34,15 +41,14 @@ function LandingPage() {
           </Link>
           <Link
             to="/how-to-use"
-            className="btn btn-primary btn-outline text-lg xl:btn-lg lg:text-xl"
+            className="btn btn-outline btn-primary text-lg xl:btn-lg lg:text-xl"
           >
             Learn More
           </Link>
         </div>
       </div>
-
       <FooterLandingPage />
-    </ContainerWithBgImage>
+    </div>
   );
 }
 

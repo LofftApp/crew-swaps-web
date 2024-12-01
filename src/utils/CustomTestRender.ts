@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router";
 
 const customTestRender = (
   ui: React.ReactElement,
-  options: { options?: RenderOptions },
+  options: { options?: RenderOptions } = {},
 ) => render(ui, { wrapper: BrowserRouter, ...options });
 
 export * from "@testing-library/react";

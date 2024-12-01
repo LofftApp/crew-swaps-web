@@ -1,10 +1,13 @@
-import BgImage from "../../components/BgImage";
-
-import { Link } from "react-router";
-import { Eye, EyeOff, Mail } from "lucide-react";
-import Logo from "../../components/Logo";
 import { useState } from "react";
-import image1 from "../../assets/illustration/illustration-1.png";
+import { Link } from "react-router";
+
+//Components
+import BgImage from "../../components/BgImage";
+import Logo from "../../components/Logo";
+import SignInImage from "../../components/SignInImage";
+
+//Assets
+import { Eye, EyeOff, Mail } from "lucide-react";
 
 function SignInPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -87,15 +90,7 @@ function SignInPage() {
           </div>
         </div>
       </div>
-
-      <div className="hidden p-0 text-center text-base text-base-content/70 xs:text-lg md:p-12 lg:block xl:p-20">
-        <img
-          src={image1}
-          alt="signin-image"
-          data-testid="signin-image"
-          className="h-[600px] w-[500px] object-cover object-center 2xl:h-[700px] 2xl:w-[600px]"
-        />
-      </div>
+      <SignInImage />
     </div>
   );
 }

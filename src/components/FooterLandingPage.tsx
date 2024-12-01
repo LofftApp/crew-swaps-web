@@ -1,5 +1,5 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
 import { Link } from "react-router";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 const routes = [
   {

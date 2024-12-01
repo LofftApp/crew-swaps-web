@@ -13,8 +13,8 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -24,9 +24,9 @@ function App() {
             <Route path="signin" element={<SignInPage />} />
           </Routes>
         </ThemeProvider>
-      </BrowserRouter>
+      </QueryClientProvider>
       {/* <ReactQueryDevtools initialIsOpen={false} /> */}
-    </QueryClientProvider>
+    </BrowserRouter>
   );
 }
 
