@@ -2,6 +2,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, expect, beforeEach } from "vitest";
 import ThemeToggle from "./ThemeToggle";
+import { ThemeProvider } from "../context/ThemeContext";
 
 describe("ThemeToggle Component", () => {
   beforeEach(() => {
@@ -17,7 +18,11 @@ describe("ThemeToggle Component", () => {
   });
 
   it("toggles theme", () => {
-    render(<ThemeToggle />);
+    render(
+      <ThemeProvider>
+        <ThemeToggle />
+      </ThemeProvider>,
+    );
     const checkbox = screen.getByRole("checkbox");
     const initialTheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches

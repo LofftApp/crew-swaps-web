@@ -81,7 +81,7 @@ function SignInPage() {
               Don't have an account?
             </p>
             <Link
-              to="/"
+              to="/signup"
               className="link-hover link text-lg font-semibold tracking-wide text-primary xs:text-xl lg:text-2xl"
             >
               Create one
