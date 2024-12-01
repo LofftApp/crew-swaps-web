@@ -34,8 +34,7 @@ describe("ThemeToggle Component", () => {
       "data-theme",
       toggledTheme,
     );
-    console.log(toggledTheme);
-    console.log(localStorage.getItem("theme"));
+
     expect(localStorage.getItem("theme")).toContain(toggledTheme);
 
     fireEvent.click(checkbox);

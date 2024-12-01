@@ -19,7 +19,6 @@ function SignInPage() {
     setEmail(e.target.value);
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setPassword(e.target.value);
-  console.log(email, password);
 
   return (
     <div
