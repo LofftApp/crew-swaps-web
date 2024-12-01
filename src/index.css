@@ -7,18 +7,9 @@
   --color-secondary: #c2dfff;
 }
 
-/* Dark theme overrides */
 :root[data-theme="darkcrew"] {
   --color-primary: #4aafff;
   --color-secondary: #2b4c68;
-}
-
-button:focus,
-select:focus,
-input:focus,
-label:focus,
-input:focus-visible {
-  @apply outline-blue-700;
 }
 
 @font-face {

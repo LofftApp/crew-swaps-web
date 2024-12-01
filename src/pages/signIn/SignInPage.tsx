@@ -24,7 +24,7 @@ function SignInPage() {
       {/* Right Image */}
       <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:-translate-y-[76%] md:translate-x-1/4" />
 
-      <div className="2xs:mt-10 mt-14 flex max-w-screen-2xl flex-col items-center justify-center gap-2 p-12 xs:mt-10 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20">
+      <div className="2xs:mt-20 3xs:mt-14 mt-5 flex max-w-screen-2xl flex-col items-center justify-center gap-2 p-12 xs:mt-20 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20">
         <div className="flex flex-col gap-2">
           <Logo className="h-12 w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20" />
           <h1 className="text-center text-2xl font-semibold capitalize leading-[3.5rem] xs:text-4xl md:text-5xl md:leading-[4rem] lg:text-6xl lg:leading-[4.5rem] 2xl:text-7xl 2xl:leading-[5rem]">
