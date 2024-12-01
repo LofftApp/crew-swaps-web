@@ -19,7 +19,10 @@ function SignInPage() {
   console.log(email, password);
 
   return (
-    <div className="max-h-1/2 relative mx-auto flex min-h-screen flex-col items-center overflow-hidden lg:grid lg:grid-cols-2">
+    <div
+      data-testid="signin"
+      className="max-h-1/2 relative mx-auto flex min-h-screen flex-col items-center overflow-hidden lg:grid lg:grid-cols-2"
+    >
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
@@ -54,17 +57,13 @@ function SignInPage() {
               value={password}
               onChange={handlePasswordChange}
             />
-            {showPassword ? (
-              <Eye
-                className="cursor-pointer text-neutral"
-                onClick={handleShowPassword}
-              />
-            ) : (
-              <EyeOff
-                className="cursor-pointer text-neutral"
-                onClick={handleShowPassword}
-              />
-            )}
+            <span
+              data-testid="toggle-password"
+              className="cursor-pointer text-neutral"
+              onClick={handleShowPassword}
+            >
+              {showPassword ? <Eye /> : <EyeOff />}
+            </span>
           </label>
           <Link
             to="/"
@@ -92,7 +91,8 @@ function SignInPage() {
       <div className="hidden p-0 text-center text-base text-base-content/70 xs:text-lg md:p-12 lg:block xl:p-20">
         <img
           src={image1}
-          alt=""
+          alt="signin-image"
+          data-testid="signin-image"
           className="h-[600px] w-[500px] object-cover object-center 2xl:h-[700px] 2xl:w-[600px]"
         />
       </div>
