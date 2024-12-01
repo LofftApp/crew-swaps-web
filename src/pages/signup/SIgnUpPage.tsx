@@ -12,11 +12,17 @@ import { Eye, EyeOff, Mail } from "lucide-react";
 function SignUpPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [password, setPassword] = useState("");
 
   const handleShowPassword = () => setShowPassword((prev) => !prev);
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setEmail(e.target.value);
+  const handleFirstNameChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setFirstName(e.target.value);
+  const handleLastNameChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setLastName(e.target.value);
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setPassword(e.target.value);
 
@@ -28,8 +34,8 @@ function SignUpPage() {
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
-      <div className="2xs:mt-20 3xs:mt-14 mx-auto mt-5 flex max-w-screen-lg flex-col items-center justify-center gap-2 p-12 xs:mt-20 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:mt-0 lg:gap-8 xl:p-20">
-        <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
+        <BgImage className="2xs:translate-y-[260%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[260%] rotate-180 transform xs:translate-y-[290%] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
+      <div className="2xs:mt-4 3xs:mt-4 mx-auto mt-4 flex max-w-screen-lg flex-col items-center justify-center gap-2 p-12 xs:mt-12 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:mt-0 lg:gap-8 xl:p-20">
         <div className="flex flex-col items-center gap-2">
           <Logo className="h-12 w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20" />
           <h1 className="text-center text-2xl font-semibold capitalize leading-[3.5rem] xs:text-4xl md:text-5xl md:leading-[4rem] lg:text-[2.7rem] lg:leading-[3.5rem] xl:text-[2.8rem] xl:leading-[3.8rem] 2xl:text-[3.5rem] 2xl:leading-[4.5rem]">
@@ -56,8 +62,8 @@ function SignUpPage() {
               type="text"
               className="grow placeholder:text-neutral"
               placeholder="First Name"
-              value={email}
-              onChange={handleEmailChange}
+              value={firstName}
+              onChange={handleFirstNameChange}
             />
           </label>
 
@@ -66,8 +72,8 @@ function SignUpPage() {
               type="text"
               className="grow placeholder:text-neutral"
               placeholder="Last Name"
-              value={email}
-              onChange={handleEmailChange}
+              value={lastName}
+              onChange={handleLastNameChange}
             />
           </label>
 
@@ -93,7 +99,7 @@ function SignUpPage() {
             </p>
             <Link
               to="/"
-              className="link-hover link underline-offset-1 text-sm font-semibold tracking-wide text-neutral"
+              className="link-hover link text-sm font-semibold tracking-wide text-neutral underline-offset-1"
             >
               Terms of Service
             </Link>
