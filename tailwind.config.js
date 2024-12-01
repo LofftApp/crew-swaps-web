@@ -15,7 +15,8 @@ export default {
         neuemontreal: ["PPNeueMontreal", "sans-serif"],
       },
       screens: {
-        xxs: "375px",
+        "3xs": "360px",
+        "2xs": "390px",
         xs: "414px",
       },
     },

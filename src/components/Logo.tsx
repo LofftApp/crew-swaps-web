@@ -23,7 +23,7 @@ function Logo({ text, className }: { text?: boolean; className?: string }) {
         />
       </svg>
 
-      {text && <span>Crew Swap</span>}
+      {text && <span>Crew Swaps</span>}
     </div>
   );
 }
