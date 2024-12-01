@@ -22,7 +22,7 @@ function SignInPage() {
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
-      <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:-translate-y-[76%] md:translate-x-1/4" />
+      <BgImage className="2xs:translate-y-[250%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[230%] rotate-180 transform xs:translate-y-[600px] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
 
       <div className="2xs:mt-20 3xs:mt-14 mt-5 flex max-w-screen-2xl flex-col items-center justify-center gap-2 p-12 xs:mt-20 xs:gap-4 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20">
         <div className="flex flex-col gap-2">

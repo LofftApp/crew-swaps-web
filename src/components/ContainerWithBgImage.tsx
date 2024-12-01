@@ -16,7 +16,7 @@ function ContainerWithBgImage({
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
-      <BgImage className="bottom-0 right-0 -translate-y-[60%] translate-x-1/3 rotate-180 transform xs:-translate-y-[72%] md:-translate-y-[76%] md:translate-x-1/4" />
+      <BgImage className="2xs:translate-y-[270%] 3xs:translate-y-[272%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[275%] rotate-180 transform xs:translate-y-[222%] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
       {children}
     </div>
   );
