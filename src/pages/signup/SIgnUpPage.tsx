@@ -105,7 +105,7 @@ function SignUpPage() {
             </Link>
           </div>
           <Link to="/" className="btn btn-primary text-lg xl:btn-lg lg:text-xl">
-            Sign Up
+            Sign up
           </Link>
           <div className="flex flex-col flex-nowrap items-center justify-center xs:flex-row xs:gap-2">
             <p className="text-base text-base-content/70 xs:text-lg lg:text-xl">
@@ -115,7 +115,7 @@ function SignUpPage() {
               to="/signin"
               className="link-hover link text-lg font-semibold tracking-wide text-primary xs:text-xl lg:text-2xl"
             >
-              Sign In
+              Sign in
             </Link>
           </div>
         </div>

@@ -8,8 +8,9 @@ import LandingPage from "./pages/home/LandingPage";
 import HowToUsePage from "./pages/howToUse/HowToUsePage";
 import AboutPage from "./pages/about/AboutPage";
 import ContactPage from "./pages/contact/ContactPage";
-import SignInPage from "./pages/signIn/SignInPage";
-import SignUpPage from "./pages/signup/SIgnUpPage";
+import SignInPage from "./pages/signin/SignInPage";
+import SignUpPage from "./pages/signup/SignUpPage";
+
 
 const queryClient = new QueryClient();
 
