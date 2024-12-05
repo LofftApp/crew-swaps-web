@@ -1,6 +1,19 @@
-import { Link } from "react-router";
 import Avatar from "./Avatar";
 import { LogOut, Settings } from "lucide-react";
+import AvatarDropdownContent from "./AvatarDropdownContent";
+
+const content = [
+  {
+    to: "/settings",
+    icon: <Settings />,
+    text: "Settings",
+  },
+  {
+    to: "/logout",
+    icon: <LogOut />,
+    text: "Logout",
+  },
+];
 
 function AvatarDropdown() {
   return (
@@ -12,22 +25,9 @@ function AvatarDropdown() {
         tabIndex={0}
         className="menu dropdown-content z-[1] w-52 rounded-box bg-base-200 p-2 shadow"
       >
-        <li className="text-base">
-          <Link to="/settings">
-            <span>
-              <Settings />
-            </span>
-            Settings
-          </Link>
-        </li>
-        <li className="text-base">
-          <Link to="/logout">
-            <span>
-              <LogOut />
-            </span>
-            Logout
-          </Link>
-        </li>
+        {content.map(({ to, icon, text }) => (
+          <AvatarDropdownContent key={to} to={to} icon={icon} text={text} />
+        ))}
       </ul>
     </div>
   );

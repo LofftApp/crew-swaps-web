@@ -1,6 +1,10 @@
-import { CalendarArrowUp, RefreshCcw, Signpost } from "lucide-react";
+import {
+  CalendarArrowUp,
+  RefreshCcw,
+  Signpost,
+  SquareMenu,
+} from "lucide-react";
 import { ReactNode } from "react";
-import { Link } from "react-router";
 import Logo from "./Logo";
 import SidebarContentGroup from "./SidebarContentGroup";
 
@@ -20,7 +24,7 @@ const requestLinks = [
   },
   {
     to: "/my-swaps",
-    icon: <Signpost />,
+    icon: <SquareMenu />,
     text: "My Swaps",
   },
 ];

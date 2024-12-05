@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
-import Avatar from "./Avatar";
 import { Grip } from "lucide-react";
 import AvatarDropdown from "./AvatarDropdown";
 
