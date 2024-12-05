@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import Avatar from "./Avatar";
 import { Grip } from "lucide-react";
+import AvatarDropdown from "./AvatarDropdown";
 
 function Navbar({ type }: { type: "landing" | "app" }) {
   return (
@@ -31,7 +32,7 @@ function Navbar({ type }: { type: "landing" | "app" }) {
             Sign in
           </Link>
         )}
-        {type === "app" && <Avatar />}
+        {type === "app" && <AvatarDropdown />}
       </div>
     </div>
   );

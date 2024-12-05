@@ -2,7 +2,7 @@ function Avatar() {
   return (
     <div className="avatar placeholder">
       <div className="w-12 rounded-full bg-neutral text-neutral-content">
-        <span>J</span>
+        <span>JC</span>
       </div>
     </div>
   );
