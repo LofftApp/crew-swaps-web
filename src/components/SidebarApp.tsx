@@ -1,4 +1,37 @@
+import { CalendarArrowUp, RefreshCcw, Signpost } from "lucide-react";
 import { ReactNode } from "react";
+import { Link } from "react-router";
+import Logo from "./Logo";
+import SidebarContentGroup from "./SidebarContentGroup";
+
+const roasterLinks = [
+  {
+    to: "/upload-roaster",
+    icon: <CalendarArrowUp />,
+    text: "Upload Roaster",
+  },
+];
+
+const requestLinks = [
+  {
+    to: "/available-swaps",
+    icon: <RefreshCcw />,
+    text: "Available Swaps",
+  },
+  {
+    to: "/my-swaps",
+    icon: <Signpost />,
+    text: "My Swaps",
+  },
+];
+
+const postLinks = [
+  {
+    to: "/my-swaps",
+    icon: <Signpost />,
+    text: "Post a swap",
+  },
+];
 
 function SidebarApp({ children }: { children: ReactNode }) {
   return (
@@ -14,14 +47,17 @@ function SidebarApp({ children }: { children: ReactNode }) {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
+
+        <ul className="menu min-h-full w-[14rem] gap-4 rounded-br-lg rounded-tr-lg bg-base-200 p-4 text-base-content xl:w-[16.5rem]">
           {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          <div className="mb-2 flex items-center justify-center lg:hidden">
+            <Logo />
+          </div>
+
+          <SidebarContentGroup links={roasterLinks} label="Roaster" />
+
+          <SidebarContentGroup links={requestLinks} label="Request" />
+          <SidebarContentGroup links={postLinks} label="Post" />
         </ul>
       </div>
     </div>
