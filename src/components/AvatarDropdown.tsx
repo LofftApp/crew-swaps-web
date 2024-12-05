@@ -9,7 +9,7 @@ const content = [
     text: "Settings",
   },
   {
-    to: "/logout",
+    to: "/",
     icon: <LogOut />,
     text: "Logout",
   },

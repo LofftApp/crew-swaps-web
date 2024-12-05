@@ -31,7 +31,7 @@ const requestLinks = [
 
 const postLinks = [
   {
-    to: "/my-swaps",
+    to: "/post-swap",
     icon: <Signpost />,
     text: "Post a swap",
   },

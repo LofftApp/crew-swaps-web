@@ -8,7 +8,7 @@ function Navbar({ type }: { type: "landing" | "app" }) {
   return (
     <div className="navbar bg-base-100 p-3">
       <div className="navbar-start">
-        <Link to="/" className="flex">
+        <Link to={type === "landing" ? "/" : "/home"} className="flex">
           <Logo text />
         </Link>
       </div>

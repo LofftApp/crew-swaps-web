@@ -12,6 +12,11 @@ import SignInPage from "./pages/signin/SignInPage";
 import SignUpPage from "./pages/signup/SignUpPage";
 import Homepage from "./pages/homepage/Homepage";
 import AppLayout from "./components/AppLayout";
+import SettingsPage from "./pages/protected/settings/SettingsPage";
+import PostSwapPage from "./pages/protected/post/PostSwapPage";
+import MySwapsPage from "./pages/protected/mySwaps/MySwapsPage";
+import AvailableSwapsPage from "./pages/protected/available/AvailableSwapsPage";
+import UploadRoasterPage from "./pages/protected/uploadRoaster/UploadRoasterPage";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +34,11 @@ function App() {
             <Route path="signup" element={<SignUpPage />} />
             <Route element={<AppLayout />}>
               <Route path="home" element={<Homepage />} />
+              <Route path="upload-roaster" element={<UploadRoasterPage />} />
+              <Route path="available-swaps" element={<AvailableSwapsPage />} />
+              <Route path="my-swaps" element={<MySwapsPage />} />
+              <Route path="post-swap" element={<PostSwapPage />} />
+              <Route path="settings" element={<SettingsPage />} />
             </Route>
             <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
