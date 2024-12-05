@@ -39,13 +39,14 @@ const postLinks = [
 
 function SidebarApp({ children }: { children: ReactNode }) {
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open bottom-0 top-0 lg:translate-y-20">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <main className="drawer-content flex flex-col items-center">
+      <main className="drawer-content mx-auto flex max-w-screen-xl flex-col items-center">
         {/* Main content here */}
         {children}
       </main>
       <div className="drawer-side">
+        {/* Overlay */}
         <label
           htmlFor="my-drawer-2"
           aria-label="close sidebar"

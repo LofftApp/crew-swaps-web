@@ -2,9 +2,12 @@ import { cn } from "../utils/cn";
 
 function Logo({ text, className }: { text?: boolean; className?: string }) {
   return (
-    <div className="flex transform flex-nowrap items-center gap-2 text-xl font-bold text-base-content duration-200 ease-in-out hover:scale-105 md:text-2xl lg:gap-3 lg:text-2xl xl:text-3xl px-1">
+    <div className="flex transform flex-nowrap items-center gap-2 px-1 text-base-content duration-200 ease-in-out hover:scale-105 lg:gap-3 lg:text-2xl">
       <svg
-        className={cn("h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14", className)}
+        className={cn(
+          "h-6 w-6 xs:h-8 xs:w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14",
+          className,
+        )}
         width="100%"
         height="100%"
         viewBox="0 0 100 100"
@@ -23,7 +26,11 @@ function Logo({ text, className }: { text?: boolean; className?: string }) {
         />
       </svg>
 
-      {text && <span>Crew Swaps</span>}
+      {text && (
+        <span className="text-xs font-bold 3xs:text-base xs:text-lg md:text-2xl xl:text-3xl">
+          Crew Swaps
+        </span>
+      )}
     </div>
   );
 }

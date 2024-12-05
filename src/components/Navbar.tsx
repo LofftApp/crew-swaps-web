@@ -6,7 +6,9 @@ import AvatarDropdown from "./AvatarDropdown";
 
 function Navbar({ type }: { type: "landing" | "app" }) {
   return (
-    <div className="navbar bg-base-100 p-3">
+    <div
+      className={`navbar bg-base-100 p-3 ${type === "app" ? "lg:absolute" : ""} `}
+    >
       <div className="navbar-start">
         <Link to={type === "landing" ? "/" : "/home"} className="flex">
           <Logo text />
