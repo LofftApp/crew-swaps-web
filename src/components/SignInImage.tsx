@@ -7,7 +7,7 @@ function SignInImage() {
         src={image1}
         alt="signin-image"
         data-testid="signin-image"
-        className="h-[600px] w-[500px] object-cover object-center 2xl:h-[700px] 2xl:w-[600px]"
+        className="h-[600px] w-[500px] object-cover object-center 2xl:h-[700px] 2xl:w-[600px] rounded-lg"
       />
     </div>
   );
