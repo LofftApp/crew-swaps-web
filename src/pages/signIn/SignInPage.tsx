@@ -73,7 +73,7 @@ function SignInPage() {
           >
             Forgot password?
           </Link>
-          <Link to="/" className="btn btn-primary text-lg xl:btn-lg lg:text-xl">
+          <Link to="/home" className="btn btn-primary text-lg xl:btn-lg lg:text-xl">
             Sign in
           </Link>
           <div className="flex flex-col flex-nowrap items-center justify-center xs:flex-row xs:gap-2">

@@ -3,18 +3,18 @@ import { Link } from "react-router";
 // Components
 import Feature from "../../components/Feature";
 import FooterLandingPage from "../../components/FooterLandingPage";
-import NavbarHomepage from "../../components/NavbarLandingPage";
 import TrustedBadge from "../../components/TrustedBadge";
 import BgImage from "../../components/BgImage";
+import Navbar from "../../components/Navbar";
 
 function LandingPage() {
   return (
     <div className="relative mx-auto flex min-h-screen flex-col items-center justify-between overflow-hidden">
-      <NavbarHomepage />
+      <Navbar type="landing" />
       {/* Left Image */}
       <BgImage className="absolute left-0 top-0 -translate-x-1/3 transform md:-translate-x-1/4" />
       {/* Right Image */}
-      <BgImage className="2xs:translate-y-[270%] 3xs:translate-y-[272%] bottom-0 right-0 top-0 translate-x-1/3 translate-y-[275%] rotate-180 transform xs:translate-y-[222%] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
+      <BgImage className="bottom-0 right-0 top-0 translate-x-1/3 translate-y-[275%] rotate-180 transform 3xs:translate-y-[272%] 2xs:translate-y-[270%] xs:translate-y-[222%] md:translate-x-1/4 md:translate-y-[235%] lg:translate-y-[247%]" />
       <div
         data-testid="landing-page"
         className="flex max-w-screen-2xl flex-col items-center justify-center gap-4 p-12 xs:mt-2 xs:p-8 md:gap-6 md:p-12 lg:gap-8 xl:p-20"
